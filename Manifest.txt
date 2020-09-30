@@ -1,0 +1,7 @@
+.simplecov
+README.md
+History.md
+Rakefile
+lib/mercurial/manager.rb
+spec/mercurial/manager_spec.rb
+spec/spec_helper.rb
