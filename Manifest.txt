@@ -1,7 +1,10 @@
-.simplecov
-README.md
 History.md
-Rakefile
-lib/mercurial/manager.rb
-spec/mercurial/manager_spec.rb
+LICENSE.txt
+README.md
+bin/hg-ssh
+bin/refresh-auth
+lib/mercurial_manager.rb
+lib/mercurial_manager/ruleset.rb
+spec/mercurial_manager/ruleset_spec.rb
+spec/mercurial_manager_spec.rb
 spec/spec_helper.rb

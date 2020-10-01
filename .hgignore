@@ -1,1 +1,3 @@
 /html/
+^gem\.deps\.rb\.lock$
+^spec/\.status$

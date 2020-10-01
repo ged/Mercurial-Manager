@@ -10,6 +10,11 @@ require 'loggability/spechelpers'
 
 ### Mock with RSpec
 RSpec.configure do |config|
+	config.expect_with( :rspec ) do |expectations|
+		expectations.include_chain_clauses_in_custom_matcher_descriptions = true
+		expectations.syntax = :expect
+	end
+
 	config.mock_with( :rspec ) do |mock|
 		mock.syntax = :expect
 	end
@@ -22,7 +27,9 @@ RSpec.configure do |config|
 	config.profile_examples = 5
 	config.run_all_when_everything_filtered = true
 	config.shared_context_metadata_behavior = :apply_to_host_groups
-	# config.warnings = true
+	config.warnings = true
+
+	config.include( Loggability::SpecHelpers )
 end
 
 
